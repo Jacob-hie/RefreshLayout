@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JellyRefreshActivity">
+
+    <uk.co.imallan.jellyrefresh.JellyRefreshLayout
+        android:id="@+id/jelly_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="4dp"
+        android:text="@string/loading"
+        app:headerHeight="48dp"
+        app:jellyColor="@color/colorPrimary"
+        app:pullHeight="160dp"
+        app:triggerHeight="108dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="loading..."
+                android:id="@+id/txt_1"/>
+
+        </ScrollView>
+
+    </uk.co.imallan.jellyrefresh.JellyRefreshLayout>
+
+</android.support.constraint.ConstraintLayout>
